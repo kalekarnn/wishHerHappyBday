@@ -1,0 +1,8 @@
+<body>
+<!-- <app-countdown></app-countdown> -->
+  <div class="happy-bday">
+    <app-countdown *ngIf="isCountDown"></app-countdown>
+    <app-loading *ngIf="!isCountDown"></app-loading>
+    <app-happy-bday *ngIf="!isCountDown"></app-happy-bday>
+  </div>
+</body>
